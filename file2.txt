@@ -2,3 +2,89 @@ Name:Abhishek
 Class:TE
 Sub:WAD
 file2
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a> cd Part-A
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git --version
+git version 2.45.0.windows.1
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git init
+Initialized empty Git repository in C:/Users/Abhishek/OneDrive/Documents/Desktop/wadassi2.a/Part-A/.git/
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git add .
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git staus
+git: 'staus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git status 
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   file1.txt
+
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git remote add origin "https://github.com/abhisheknighut45/Wad_Assignment_2a.git"
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git commit -m "first commit"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Abhishek@LAPTOP-7SF0QP33.(none)')
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> ^C
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A>  git config --global user.email "abhisheknighut756.com"
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git config --global user.name "abhisheknighut45"
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git commit -m "first commit"
+[master (root-commit) cb5af91] first commit
+ 1 file changed, 3 insertions(+)
+ create mode 100644 file1.txt
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git status
+On branch master
+nothing to commit, working tree clean
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 238 bytes | 238.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/abhisheknighut45/Wad_Assignment_2a.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        file2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git add .
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   file2.txt
+
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git commit -m "Second commit"
+[master a84b476] Second commit
+ 1 file changed, 4 insertions(+)
+ create mode 100644 file2.txt
+PS C:\Users\Abhishek\OneDrive\Documents\Desktop\wadassi2.a\Part-A> git push -u origin master   
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 302 bytes | 151.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/abhisheknighut45/Wad_Assignment_2a.git
+   cb5af91..a84b476  master -> master
+branch 'master' set up to track 'origin/master'.
